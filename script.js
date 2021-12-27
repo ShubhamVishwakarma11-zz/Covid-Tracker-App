@@ -19,12 +19,12 @@ function RefreshData() {
 
         console.log(json.Global);
 
-        NewConfirmed.innerHTML = "Cases Reported Today: " + new_confirmed;
-        NewRecovered.innerHTML = "Cases Recovered Today: " + new_recovered;
-        NewDeaths.innerHTML = "Deaths Reported Today: " + new_deaths;
-        TotalConfirmed.innerHTML = "Total Cases Reported: " + total_confirmed;
-        TotalRecovered.innerHTML = "Total Recovered Cases " + total_recovered;
-        TotalDeaths.innerHTML = "Total Deaths Reported: " + total_deaths;
+        NewConfirmed.innerText = "Cases Reported Today: " + new_confirmed;
+        NewRecovered.innerText = "Cases Recovered Today: " + new_recovered;
+        NewDeaths.innerText = "Deaths Reported Today: " + new_deaths;
+        TotalConfirmed.innerText = "Total Cases Reported: " + total_confirmed;
+        TotalRecovered.innerText = "Total Recovered Cases " + total_recovered;
+        TotalDeaths.innerText = "Total Deaths Reported: " + total_deaths;
     })
     .catch(err => console.log(err));
 }
